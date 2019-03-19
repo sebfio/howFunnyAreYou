@@ -66,4 +66,4 @@ class Predictor:
             frequencyArray[0][j] = self.word_bank[word] if word in self.word_bank else 0
         
         predict = self.model.predict(frequencyArray)
-        return int(predict[0][0] * 100)
+        return float(predict[0][0] * 100)

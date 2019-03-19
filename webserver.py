@@ -23,4 +23,4 @@ def updateResult():
     return json.dumps({'yelp' : yelpPercent, 'norm' : normPercent})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=80)
